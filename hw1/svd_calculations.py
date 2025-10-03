@@ -14,6 +14,12 @@ A = np.array([[5, -5, 0, 0],
               [0, 0, 2, 1]])
 # compute_svd(A)
 
+A_1 = np.array([[10, -10, 0],
+                [0, -4, 2],
+                [2, 0, -5]])
+
+compute_svd(A_1)
+
 
 A = np.array([[1, 1, 1],
               [10, 2, 9],
@@ -26,7 +32,7 @@ Sigma_inv = la.pinv(sigma)
 A_inv = VT.T @ Sigma_inv @ U.T
 b = np.array([3,2,2])
 x = A_inv @ b
-print("x =\n", x)
+# print("x =\n", x)
 
 
 
